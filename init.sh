@@ -9,7 +9,7 @@ apt install nginx certbot python3-certbot-nginx
 ufw allow ssh
 ufw allow 'Nginx Full'
 ufw delete allow 'Nginx HTTP'
-ufw enable
+ufw enable -y
 
 sysctl -w net.core.somaxconn=4096
 
