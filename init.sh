@@ -1,5 +1,6 @@
 # init ubuntu server with installing ghost cms
 # https://raw.githubusercontent.com/CryptonMorf/init_web_server/master/init.sh
+# prerequisite: ubuntu:20.04
 # !/bin/bash
 
 set -e
