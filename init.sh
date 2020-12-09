@@ -24,6 +24,7 @@ ufw enable <<< 'y'
 sysctl -w net.core.somaxconn=4096
 
 useradd -m -s /bin/bash andy
+usermod -aG sudo andy
 
 mkdir -p /var/www/ghost
 chown andy:andy /var/www/ghost
