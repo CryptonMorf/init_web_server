@@ -9,7 +9,7 @@ apt upgrade -y
 apt install nginx certbot python3-certbot-nginx -y
 
 apt install mysql-server -y
-mysql <<< 'create user andy@localhost identified with mysql_native_password "passwd";grant all privileges on *.* to andy@localhost;flush privileges;'
+mysql <<< 'create user andy@localhost identified with mysql_native_password by "passwd";grant all privileges on *.* to andy@localhost;flush privileges;'
 
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash
 apt install nodejs -y
